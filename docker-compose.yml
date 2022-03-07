@@ -6,6 +6,9 @@ services:
       - "8080:80"
     volumes:
       - ./:/usr/share/nginx
+      
+    networks:
+        - app-network
 
   mysql-app:
       image: mysql:5.7.22
