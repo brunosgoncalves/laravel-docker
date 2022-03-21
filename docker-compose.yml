@@ -14,6 +14,8 @@ services:
       image: mysql:5.7.22
       ports:
         - "3306:3306"
+      volumes:
+        - .docker/dbdata:/var/lib/mysql
       environment:
         MYSQL_DATABASE: laravel
         MYSQL_ROOT_PASSWORD: laravel
