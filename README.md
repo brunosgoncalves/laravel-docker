@@ -76,6 +76,26 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 - docker exec -it laravel-docker_web_1 bash
 
+.env.example
 
+apt-get update && apt-get install -y iputils-ping
+
+cd /usr/share/nginx
+
+php artisan migrate
+
+/*------*/
+composer update
+
+php artisan serve
+
+/*------*/
+
+ubuntu 
+sudo apt-get install php-mbstring
+
+Windows
+composer update
+php artisan serve
 
 
